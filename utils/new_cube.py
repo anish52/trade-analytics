@@ -1,7 +1,10 @@
 import ipywidgets as ipw
 
-def cube_factory():
-    cube = ipw.HTML('<style>\
+def cube_factory(sector):
+    key_list = ['Electronics Technology', 'Technology Servies', 'Consumer Durables', 'Retail Trade', 'Healthcare']
+    values = [round(sector[key],2) for key in key_list]
+    
+    css_code = '<style>\
     .spinner div {\
         position: absolute;\
         width: 200px;\
@@ -67,17 +70,18 @@ def cube_factory():
         66%      { -ms-transform: rotateY(90deg) rotateX(90deg); transform: rotateY(90deg) rotateX(90deg); }\
         83%      { -ms-transform: rotateX(90deg); transform: rotateX(90deg); }\
     }\
-    </style>  \
-    <body>\
+    </style>'
+    
+    html_code='<body>\
             <div id="stage" style="width: 200px; height: 200px;">\
                 <div class="spinner">\
-                    <div class="face1" style="color:lightgreen;font-size:18px"> <br>Electronics Technology <br> 15.57</div>\
-                    <div class="face2" style="color:Khaki;font-size:18px"> <br>Technology Servies <br> 8.79</div>\
-                    <div class="face3" style="color:DodgerBlue;font-size:18px"> <br>Consumer Durables <br> 7.22</div>\
-                    <div class="face4" style="color:white;font-size:18px"> <br>Retail Trade <br> 5.63</div>\
-                    <div class="face5" style="color:LightCoral;font-size:18px"> <br>Healthcare <br> 2.28</div>\
-                    <div class="face6" style="color:green;font-size:20px"></div>\
+                    <div class="face1" style="color:lightgreen;font-size:18px"> <br>Electronics Technology <br> {0}%</div>\
+                    <div class="face2" style="color:Khaki;font-size:18px"> <br>Technology Servies <br> {1}%</div>\
+                    <div class="face3" style="color:DodgerBlue;font-size:18px"> <br>Consumer Durables <br> {2}%</div>\
+                    <div class="face4" style="color:white;font-size:18px"> <br>Retail Trade <br> {3}%</div>\
+                    <div class="face5" style="color:LightCoral;font-size:18px"> <br>Healthcare <br> {4}%</div>\
+                    <div class="face6" style="color:green;font-size:18px"></div>\
                 </div>\
             </div>\
-    </body>')
-    return cube
+    </body>'.format(values[0], values[1], values[2], values[3], values[4])
+    return ipw.HTML(css_code + html_code)
