@@ -394,15 +394,15 @@ def sector_wise_widget(percent_change_df):
             if idx < len(list_object):
                 list_object.pop(idx)
     
-    sec = percent_change_df['sector']
-    val = percent_change_df['percent_change']
-    res = {sec[i]: val[i] for i in range(len(sec))}
-    data = {}
-    for key, val in zip(sec, val): 
-        data[key] = data.get(key, 0) + val 
+#     sec = percent_change_df['sector']
+#     val = percent_change_df['percent_change']
+#     res = {sec[i]: val[i] for i in range(len(sec))}
+#     data = {}
+#     for key, val in zip(sec, val): 
+#         data[key] = data.get(key, 0) + val 
 
-    data = dict(sorted(data.items(), key=lambda item: item[1]))
-
+#     data = dict(sorted(data.items(), key=lambda item: item[1]))
+    data = dict(sorted(get_sector(percent_change_df).items(), key=lambda item: item[1]))
 
     names = list(data.keys())
     values = list(data.values())
@@ -461,8 +461,9 @@ def sector_wise_widget(percent_change_df):
     return widget
 
 
-def cube_widget():
-    a = cube_factory()
+def cube_widget(percent_change_df):
+    sector = get_sector(percent_change_df)
+    a = cube_factory(sector)
     return a
 
 
