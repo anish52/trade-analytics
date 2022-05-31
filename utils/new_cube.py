@@ -10,7 +10,7 @@ def cube_factory():
         background: rgba(37,37,37,0.8);\
         box-shadow: inset 0 0 20px rgba(0,0,0,0.2);\
         text-align: center;\
-        line-height: 120px;\
+        line-height: 50px;\
         font-size: 100px;\
     }\
     .spinner .face1 { \
@@ -71,11 +71,11 @@ def cube_factory():
     <body>\
             <div id="stage" style="width: 200px; height: 200px;">\
                 <div class="spinner">\
-                    <div class="face1" style="color:lightgreen;font-size:20px"><b>Electronics Technology <br> 15.57</b></div>\
-                    <div class="face2" style="color:DarkOrchid;font-size:20px">Technology Servies <br> 8.79</div>\
-                    <div class="face3" style="color:DodgerBlue;font-size:20px">Consumer Durables <br> 7.22</div>\
-                    <div class="face4" style="color:white;font-size:20px">Retail Trade <br> 5.63</div>\
-                    <div class="face5" style="color:LightCoral;font-size:20px">Healthcare <br> 2.28</div>\
+                    <div class="face1" style="color:lightgreen;font-size:18px"> <br>Electronics Technology <br> 15.57</div>\
+                    <div class="face2" style="color:Khaki;font-size:18px"> <br>Technology Servies <br> 8.79</div>\
+                    <div class="face3" style="color:DodgerBlue;font-size:18px"> <br>Consumer Durables <br> 7.22</div>\
+                    <div class="face4" style="color:white;font-size:18px"> <br>Retail Trade <br> 5.63</div>\
+                    <div class="face5" style="color:LightCoral;font-size:18px"> <br>Healthcare <br> 2.28</div>\
                     <div class="face6" style="color:green;font-size:20px"></div>\
                 </div>\
             </div>\
