@@ -102,15 +102,15 @@ def load_data(stock_list):
     return data_list, ti_list
 
 def percent_change_df(data_list, sector_market_share):
-    prev_date = data_list[2].iloc[-1,:].name
-    def prev_workday():
-        date = prev_date.date() - pd.DateOffset(1)
-        while date.weekday() > 4:
-            date -= pd.DateOffset(1)
-        return date
+    prev_date = data_list[2].dropna().iloc[-1,:].name
+#     def prev_workday():
+#         date = prev_date.date() - pd.DateOffset(1)
+#         while date.weekday() > 4:
+#             date -= pd.DateOffset(1)
+#         return date
 
-    x = data_list[0].loc[prev_workday(),:]
-    y = data_list[2].iloc[-1,:]
+    x = data_list[0].loc[:prev_date.date() + pd.DateOffset(1),:].iloc[-2,:]
+    y = data_list[2].dropna().iloc[-1,:]
     dic = {}
     for i in list(sector_market_share.keys()):
         close = x[i].Close
