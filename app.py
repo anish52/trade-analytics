@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     v = voila.app.Voila()
     v.notebook_path = "./dashboard.ipynb"
-    v.ip = "0.0.0.0"
+    v.ip = "*"
     v.port = int(port)
     v.initialize()
 
