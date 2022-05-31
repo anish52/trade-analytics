@@ -1,0 +1,264 @@
+{
+  "global": {
+    "tabSetEnableClose": true,
+    "tabSetTabLocation": "bottom"
+  },
+  "borders": [],
+  "layout": {
+    "type": "row",
+    "id": "#1",
+    "children": [
+      {
+        "type": "tabset",
+        "id": "#2",
+        "children": [
+          {
+            "type": "tab",
+            "id": "#3",
+            "name": "Market Overview",
+            "component": "sub",
+            "config": {
+              "model": {
+                "global": {
+                  "tabSetEnableClose": true
+                },
+                "borders": [],
+                "layout": {
+                  "type": "row",
+                  "id": "#1",
+                  "children": [
+                    {
+                      "type": "row",
+                      "id": "#bfeb2482-6aa4-4599-bd8e-dca30a7ed5ad",
+                      "children": [
+                        {
+                          "type": "tabset",
+                          "id": "#d89cdd1a-d822-492c-95e1-3a8b2f7e6d44",
+                          "weight": 6.677875528743265,
+                          "enableTabStrip": false,
+                          "children": [
+                            {
+                              "type": "tab",
+                              "id": "#233bbc7d-1264-4918-b609-d48d0e1727b3",
+                              "name": "Banner",
+                              "component": "Widget",
+                              "config": {
+                                "layoutID": "#3"
+                              }
+                            }
+                          ],
+                          "active": true
+                        },
+                        {
+                          "type": "tabset",
+                          "id": "#203b4cb1-a74f-481d-aa86-7b3655af6342",
+                          "weight": 26.09030439136904,
+                          "enableTabStrip": false,
+                          "children": [
+                            {
+                              "type": "tab",
+                              "id": "#bdcf3ae5-dbad-47d5-a975-57e3b28365c4",
+                              "name": "Summary",
+                              "component": "Widget",
+                              "config": {
+                                "layoutID": "#3"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "tabset",
+                          "id": "#286b1066-3078-4726-a552-f8b6513940b2",
+                          "weight": 67.23182007988768,
+                          "enableTabStrip": false,
+                          "children": [
+                            {
+                              "type": "tab",
+                              "id": "#cc5013c9-c56b-4dc5-ae0c-80fdda606a3f",
+                              "name": "Heatmap",
+                              "component": "Widget",
+                              "config": {
+                                "layoutID": "#3"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "tab",
+            "id": "#196b1831-6c63-4d7d-884d-23490827a3ca",
+            "name": "Sector Performance",
+            "component": "sub",
+            "config": {
+              "model": {
+                "global": {
+                  "tabSetEnableClose": true
+                },
+                "borders": [],
+                "layout": {
+                  "type": "row",
+                  "id": "#1",
+                  "children": [
+                    {
+                      "type": "tabset",
+                      "id": "#2aa4ea16-a86e-440a-8f25-d1af0063a7e2",
+                      "weight": 75.63829787234043,
+                      "enableTabStrip": false,
+                      "children": [
+                        {
+                          "type": "tab",
+                          "id": "#e097d3f4-3914-483b-b893-e9a381350995",
+                          "name": "Performance",
+                          "component": "Widget",
+                          "config": {
+                            "layoutID": "#196b1831-6c63-4d7d-884d-23490827a3ca"
+                          }
+                        }
+                      ],
+                      "active": true
+                    },
+                    {
+                      "type": "tabset",
+                      "id": "#7d817d31-6f57-44d9-8906-0d3ffec520bf",
+                      "weight": 24.361702127659573,
+                      "enableTabStrip": false,
+                      "children": [
+                        {
+                          "type": "tab",
+                          "id": "#870682c3-c88d-4d7a-9c7e-64a7bd26e08b",
+                          "name": "Cube",
+                          "component": "Widget",
+                          "config": {
+                            "layoutID": "#196b1831-6c63-4d7d-884d-23490827a3ca"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "tab",
+            "id": "#159c719d-f4ad-46c3-95f2-b19ecbebe550",
+            "name": "Share Price",
+            "component": "sub",
+            "config": {
+              "model": {
+                "global": {
+                  "tabSetEnableClose": true
+                },
+                "borders": [],
+                "layout": {
+                  "type": "row",
+                  "id": "#1",
+                  "children": [
+                    {
+                      "type": "tabset",
+                      "id": "#78cb12d4-fe3e-4f0d-87c6-5c915be4d74c",
+                      "enableTabStrip": false,
+                      "children": [
+                        {
+                          "type": "tab",
+                          "id": "#4507d6d8-691e-49fc-b7b8-945b25d4ea8b",
+                          "name": "Pricechart",
+                          "component": "Widget",
+                          "config": {
+                            "layoutID": "#159c719d-f4ad-46c3-95f2-b19ecbebe550"
+                          }
+                        }
+                      ],
+                      "active": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "tab",
+            "id": "#cfebf781-0787-483b-9f26-29a01dfcad20",
+            "name": "Technical Indicators",
+            "component": "sub",
+            "config": {
+              "model": {
+                "global": {
+                  "tabSetEnableClose": true
+                },
+                "borders": [],
+                "layout": {
+                  "type": "row",
+                  "id": "#1",
+                  "children": [
+                    {
+                      "type": "tabset",
+                      "id": "#28c17b1d-4677-47ab-81f9-bccbefe3add8",
+                      "enableTabStrip": false,
+                      "children": [
+                        {
+                          "type": "tab",
+                          "id": "#223d24a5-0463-4c82-80c3-881dcbd370a8",
+                          "name": "TIGraph",
+                          "component": "Widget",
+                          "config": {
+                            "layoutID": "#cfebf781-0787-483b-9f26-29a01dfcad20"
+                          }
+                        }
+                      ],
+                      "active": true
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "tab",
+            "id": "#7135ee57-3787-42bf-91a5-4f5fb19f57cb",
+            "name": "Prediction",
+            "component": "sub",
+            "config": {
+              "model": {
+                "global": {
+                  "tabSetEnableClose": true
+                },
+                "borders": [],
+                "layout": {
+                  "type": "row",
+                  "id": "#1",
+                  "children": [
+                    {
+                      "type": "tabset",
+                      "id": "#806aa848-1922-49f1-9688-a6c01fb097b3",
+                      "enableTabStrip": false,
+                      "children": [
+                        {
+                          "type": "tab",
+                          "id": "#9bba4f07-71f3-4df4-82d8-c7a0e8c78a96",
+                          "name": "Bull_Bear",
+                          "component": "Widget",
+                          "config": {
+                            "layoutID": "#7135ee57-3787-42bf-91a5-4f5fb19f57cb"
+                          }
+                        }
+                      ],
+                      "active": true
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "active": true
+      }
+    ]
+  }
+}
