@@ -36,32 +36,32 @@ def update():
 
 	data_list, ti_list = load_data(stock_list)
 	df = percent_change_df(data_list, sector_market_share)
-	print(df)
+	#print(df)
 
 	stock_price_widget = stock_price_plot_factory(stock_list, data_list[0])
-	print(stock_price_widget)
+	#print(stock_price_widget)
 
 	ti_widget = ti_plot_factory(data_list, ti_list, time_intervals, stock_list, cur_stock, cur_interval)
-	print(ti_widget)
+	#print(ti_widget)
 
 	heatmap_widget = get_heatmap_widget(df)    
-	print(heatmap_widget)
+	#print(heatmap_widget)
 
 	banner_widget = get_banner_widget()
-	print(banner_widget)
+	#print(banner_widget)
 
 	index_stats_widget = index_stats_widget(sector_market_share, df)
-	print(index_stats_widget)
+	#print(index_stats_widget)
 
 	sector_wise_widget = sector_wise_widget(df)
-	print(sector_wise_widget)
+	#print(sector_wise_widget)
 
 	cube_widget = cube_widget()
-	print(cube_widget)
+	#print(cube_widget)
 
 	pred_df = get_prediction()
 	prediction_widget = plot_pred(pred_df)
-	print(prediction_widget)
+	#print(prediction_widget)
 
 	widgets = {
 		'Banner': banner_widget,
@@ -76,6 +76,7 @@ def update():
 
 		'Bull_Bear': prediction_widget
 	}
+	print('Widgets created!')
 
 	with open('./output/cache.json', 'w+') as outfile:
 		json.dump(widgets, outfile)
