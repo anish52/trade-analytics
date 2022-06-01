@@ -136,7 +136,7 @@ def get_heatmap(df):
     except:
         output_path = '../output/overview.png'
         plt.savefig(output_path, bbox_inches='tight')
-    plt.close(fig)
+    plt.close('all')
     return output_path
 
 

@@ -270,7 +270,7 @@ def get_heatmap_widget(df):
     # image_src = './output/overview.png'
     # with Image.open(image_src) as im:
     #     a = np.asarray(im)
-    img_src = get_heatmap(df)
+    img_src = './output/overview.png'
     img = Image.open(img_src)
 
     # Create figure
@@ -335,7 +335,7 @@ def get_heatmap_widget(df):
     return widget
 
 
-def index_stats_widget(sector_market_share, percent_change_df, data = ["^DJI","^IXIC", "^GSPC", "QQQ"]):
+def get_index_stats_widget(sector_market_share, percent_change_df, data = ["^DJI","^IXIC", "^GSPC", "QQQ"]):
     '''
     Add documentation 
     '''
@@ -384,7 +384,7 @@ def index_stats_widget(sector_market_share, percent_change_df, data = ["^DJI","^
     return ret
 
 
-def sector_wise_widget(percent_change_df):
+def get_sector_wise_widget(percent_change_df):
     '''
     Add documentation
     '''
@@ -461,7 +461,7 @@ def sector_wise_widget(percent_change_df):
     return widget
 
 
-def cube_widget(percent_change_df):
+def get_cube_widget(percent_change_df):
     sector = get_sector(percent_change_df)
     a = cube_factory(sector)
     return a
@@ -511,7 +511,7 @@ if __name__=="__main__":
     sector_wise_widget = sector_wise_widget(df)
     print(sector_wise_widget)
 
-    cube_widget = cube_widget()
+    cube_widget = cube_widget(df)
     print(cube_widget)
 
 
