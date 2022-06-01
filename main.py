@@ -1,4 +1,5 @@
 from flask import Flask, request
+from utils.vanilla_dataloader import load_data, percent_change_df
 from widgets import get_banner_widget, index_stats_widget, get_heatmap_widget,\
 					sector_wise_widget, cube_widget, stock_price_plot_factory,\
 					ti_plot_factory
