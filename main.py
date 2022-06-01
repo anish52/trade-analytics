@@ -1,5 +1,5 @@
 from flask import Flask, request
-from widget import get_banner_widget, index_stats_widget, get_heatmap_widget,\
+from widgets import get_banner_widget, index_stats_widget, get_heatmap_widget,\
 					sector_wise_widget, cube_widget, stock_price_plot_factory,\
 					ti_plot_factory
 from prediction import get_prediction, plot_pred
