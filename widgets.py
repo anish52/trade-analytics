@@ -468,6 +468,8 @@ def get_cube_widget(percent_change_df):
 
 
 if __name__=="__main__":
+    import sys, pickle
+
     sector_market_share = {'AAPL': ['Electronics Technology', 2455053795328],
      'AMZN': ['Retail Trade', 1167926362112],
      'AZN': ['Healthcare', 208860000000],
@@ -491,6 +493,17 @@ if __name__=="__main__":
 
     data_list, ti_list = load_data(stock_list)
     df = percent_change_df(data_list, sector_market_share)
+    
+
+    with open ('./output/cache.pkl','rb') as f:
+        d = pickle.load(f)
+
+    data_list, ti_list = d['data_list'], d['ti_list']
+    df = d['df']
+    pred_df = d['pred_df']
+    print(data_list)
+    print(ti_list)
+    print(pred_df)
     print(df)
 
     stock_price_widget = stock_price_plot_factory(stock_list, data_list[0])
@@ -505,13 +518,15 @@ if __name__=="__main__":
     banner_widget = get_banner_widget()
     print(banner_widget)
 
-    index_stats_widget = index_stats_widget(sector_market_share, df)
+    index_stats_widget = get_index_stats_widget(sector_market_share, df)
     print(index_stats_widget)
 
-    sector_wise_widget = sector_wise_widget(df)
+    sector_wise_widget = get_sector_wise_widget(df)
     print(sector_wise_widget)
 
-    cube_widget = cube_widget(df)
+    cube_widget = get_cube_widget(df)
     print(cube_widget)
+
+    sys.exit(0)
 
 
