@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>dashboard.utils package &#8212; Trade Analytics 1.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="dashboard package" href="dashboard.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dashboard.html" title="dashboard package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Trade Analytics 1.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >dashboard</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="dashboard.html" accesskey="U">dashboard package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">dashboard.utils package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="dashboard-utils-package">
+<h1>dashboard.utils package<a class="headerlink" href="#dashboard-utils-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-dashboard.utils.banner">
+<span id="dashboard-utils-banner-module"></span><h2>dashboard.utils.banner module<a class="headerlink" href="#module-dashboard.utils.banner" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.utils.banner.Banner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.utils.banner.</span></span><span class="sig-name descname"><span class="pre">Banner</span></span><a class="headerlink" href="#dashboard.utils.banner.Banner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">-</span> <span class="pre">get_performance()</span></span></dt>
+<dd><p>returns the data for the banner</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">-</span> <span class="pre">create_banner()</span></span></dt>
+<dd><p>returns the ipywidget object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.banner.Banner.create_banner">
+<span class="sig-name descname"><span class="pre">create_banner</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.banner.Banner.create_banner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to create moving banner displayed at the top of the dashboard
+Param: stock_list (defualt)
+Return: panel.pane.markup.HTML</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.banner.Banner.get_performance">
+<span class="sig-name descname"><span class="pre">get_performance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.banner.Banner.get_performance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard.utils.cube">
+<span id="dashboard-utils-cube-module"></span><h2>dashboard.utils.cube module<a class="headerlink" href="#module-dashboard.utils.cube" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.utils.cube.Cube">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.utils.cube.</span></span><span class="sig-name descname"><span class="pre">Cube</span></span><a class="headerlink" href="#dashboard.utils.cube.Cube" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">-</span> <span class="pre">cube_factory()</span></span></dt>
+<dd><p>returns the cube ipywidget to be rendered on dashboard.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.cube.Cube.cube_factory">
+<span class="sig-name descname"><span class="pre">cube_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sector</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.cube.Cube.cube_factory" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard.utils.heatmap">
+<span id="dashboard-utils-heatmap-module"></span><h2>dashboard.utils.heatmap module<a class="headerlink" href="#module-dashboard.utils.heatmap" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.utils.heatmap.Heatmap">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.utils.heatmap.</span></span><span class="sig-name descname"><span class="pre">Heatmap</span></span><a class="headerlink" href="#dashboard.utils.heatmap.Heatmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">-</span> <span class="pre">get_heatmap()</span></span></dt>
+<dd><p>saves the heatmap plot to be rendered on dashboard.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">-</span> <span class="pre">get_color()</span></span></dt>
+<dd><p>returns the ‘RED/GREEN’ color based on stock performance.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.heatmap.Heatmap.get_color">
+<span class="sig-name descname"><span class="pre">get_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.heatmap.Heatmap.get_color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.heatmap.Heatmap.get_heatmap">
+<span class="sig-name descname"><span class="pre">get_heatmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./output/overview.png'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.heatmap.Heatmap.get_heatmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard.utils.index_performance">
+<span id="dashboard-utils-index-performance-module"></span><h2>dashboard.utils.index_performance module<a class="headerlink" href="#module-dashboard.utils.index_performance" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.utils.index_performance.Index_performance">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.utils.index_performance.</span></span><span class="sig-name descname"><span class="pre">Index_performance</span></span><a class="headerlink" href="#dashboard.utils.index_performance.Index_performance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.index_performance.Index_performance.get_index_performance">
+<span class="sig-name descname"><span class="pre">get_index_performance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">symbol</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.index_performance.Index_performance.get_index_performance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function is used to get the current performance of Nasdaq, Dow Jones, and S&amp;P 500
+(currentPrice - previousClose)/(previousClose)
+The <em>quickStats</em> function utilizes this output.
+…
+Parameters: symbol of index
+…
+:return: amount of change, percent change, and stock symbol are returned
+:rtype: tuple</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard.utils.sector">
+<span id="dashboard-utils-sector-module"></span><h2>dashboard.utils.sector module<a class="headerlink" href="#module-dashboard.utils.sector" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.utils.sector.Sector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.utils.sector.</span></span><span class="sig-name descname"><span class="pre">Sector</span></span><a class="headerlink" href="#dashboard.utils.sector.Sector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class returns the sector wise performance based on the
+weighted sum of the major stocks in each sector. The weights
+are based on the market cap of each comapny.
+————————————————————–
+.. method:: - get_sector()</p>
+<blockquote>
+<div><p>returns the sector-wise percentage change</p>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.sector.Sector.get_sector">
+<span class="sig-name descname"><span class="pre">get_sector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.sector.Sector.get_sector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard.utils.vanilla_dataloader">
+<span id="dashboard-utils-vanilla-dataloader-module"></span><h2>dashboard.utils.vanilla_dataloader module<a class="headerlink" href="#module-dashboard.utils.vanilla_dataloader" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.utils.vanilla_dataloader.Vanilla_dataloader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.utils.vanilla_dataloader.</span></span><span class="sig-name descname"><span class="pre">Vanilla_dataloader</span></span><a class="headerlink" href="#dashboard.utils.vanilla_dataloader.Vanilla_dataloader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class queries the yfinance API and generates the data for
+the list of stocks passed as parameters.
+—————————————————————————
+.. method:: - load_data()</p>
+<blockquote>
+<div><p>returns the data for the list of stocks passed as params</p>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">-</span> <span class="pre">percent_change_df()</span></span></dt>
+<dd><p>returns the percentage change based on the prev. closing price</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.vanilla_dataloader.Vanilla_dataloader.load_data">
+<span class="sig-name descname"><span class="pre">load_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stock_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.vanilla_dataloader.Vanilla_dataloader.load_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.utils.vanilla_dataloader.Vanilla_dataloader.percent_change_df">
+<span class="sig-name descname"><span class="pre">percent_change_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sector_market_share</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.utils.vanilla_dataloader.Vanilla_dataloader.percent_change_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dashboard.utils" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">dashboard.utils package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-dashboard.utils.banner">dashboard.utils.banner module</a></li>
+<li><a class="reference internal" href="#module-dashboard.utils.cube">dashboard.utils.cube module</a></li>
+<li><a class="reference internal" href="#module-dashboard.utils.heatmap">dashboard.utils.heatmap module</a></li>
+<li><a class="reference internal" href="#module-dashboard.utils.index_performance">dashboard.utils.index_performance module</a></li>
+<li><a class="reference internal" href="#module-dashboard.utils.sector">dashboard.utils.sector module</a></li>
+<li><a class="reference internal" href="#module-dashboard.utils.vanilla_dataloader">dashboard.utils.vanilla_dataloader module</a></li>
+<li><a class="reference internal" href="#module-dashboard.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="dashboard.html"
+                          title="previous chapter">dashboard package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/dashboard.utils.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dashboard.html" title="dashboard package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Trade Analytics 1.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >dashboard</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="dashboard.html" >dashboard package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">dashboard.utils package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Anish Kumar, Haoran Xu, Nikhil Dutt, Sandra Villamar, Sanjey Selvan-Sumathi, Zicheng Wei.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>
