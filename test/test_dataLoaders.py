@@ -1,7 +1,6 @@
 from banner import *
 from index_performance import * 
 from vanilla_dataloader import *
-from heatmap import *
 import pandas as pd
 import pytest
 

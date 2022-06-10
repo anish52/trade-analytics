@@ -1,0 +1,14 @@
+[
+  "test_dataLoaders (1).py::test_get_index_performance",
+  "test_dataLoaders (1).py::test_get_performance",
+  "test_dataLoaders (1).py::test_load_data",
+  "test_dataLoaders (1).py::test_percent_change_df",
+  "test_dataLoaders.py::test_get_index_performance",
+  "test_dataLoaders.py::test_get_performance",
+  "test_dataLoaders.py::test_load_data",
+  "test_dataLoaders.py::test_percent_change_df",
+  "test_vanilla.py::TestWidgets::test_widgets_vanilla",
+  "test_vis.py::test_create_banner",
+  "test_vis.py::test_cube_factory",
+  "test_vis.py::test_get_sector_cube"
+]
