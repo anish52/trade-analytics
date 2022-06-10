@@ -87,7 +87,7 @@ To run the code coverage tests on your server, go inside the 'tests' directory w
 pytest --cov-report term-missing --cov=../dashboard
 ```
 
-You can also find the final report which has been added to the 'tests' directory as 'code_coverage.png'.
+You might need to install "pytest-cov" module for this. You can also find the final report which has been added to the 'tests' directory as 'code_coverage.png'.
 
 .. image:: https://github.com/anish52/trade-analytics/blob/main/tests/code_coverage.png?sanitize=true
 
