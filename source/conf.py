@@ -12,9 +12,9 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../..'))
-sys.path.insert(0, os.path.abspath('../../dashboard'))
-sys.path.insert(0, os.path.abspath('../../dashboard/utils'))
+sys.path.insert(0, os.path.abspath('../'))
+sys.path.insert(0, os.path.abspath('../dashboard'))
+sys.path.insert(0, os.path.abspath('../dashboard/utils'))
 print(sys.path)
 
 
