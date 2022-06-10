@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>dashboard package &#8212; Trade Analytics 1.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="dashboard.utils package" href="dashboard.utils.html" />
+    <link rel="prev" title="dashboard" href="modules.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dashboard.utils.html" title="dashboard.utils package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="dashboard"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Trade Analytics 1.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">dashboard</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">dashboard package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="dashboard-package">
+<h1>dashboard package<a class="headerlink" href="#dashboard-package" title="Permalink to this headline">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dashboard.utils.html">dashboard.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.utils.html#module-dashboard.utils.banner">dashboard.utils.banner module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.utils.html#module-dashboard.utils.cube">dashboard.utils.cube module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.utils.html#module-dashboard.utils.heatmap">dashboard.utils.heatmap module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.utils.html#module-dashboard.utils.index_performance">dashboard.utils.index_performance module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.utils.html#module-dashboard.utils.sector">dashboard.utils.sector module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.utils.html#module-dashboard.utils.vanilla_dataloader">dashboard.utils.vanilla_dataloader module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dashboard.utils.html#module-dashboard.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-dashboard.app">
+<span id="dashboard-app-module"></span><h2>dashboard.app module<a class="headerlink" href="#module-dashboard.app" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-dashboard.prediction">
+<span id="dashboard-prediction-module"></span><h2>dashboard.prediction module<a class="headerlink" href="#module-dashboard.prediction" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.prediction.Prediction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.prediction.</span></span><span class="sig-name descname"><span class="pre">Prediction</span></span><a class="headerlink" href="#dashboard.prediction.Prediction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Prediction class predicts the expected bearish/bullish market behaivior
+based on the widely used ‘Ichimoku’ algorithm. It monitors the moving-
+average (MA) over a fixed time interval and forecasts the trend further.
+The prediction is demonstrated in the form of a cloud, famously known as
+the ‘Ichimoku Cloud’. This module finally returns a figure widget which
+can be directly integrated with the dashboard.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.prediction.Prediction.fillcol">
+<span class="sig-name descname"><span class="pre">fillcol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.prediction.Prediction.fillcol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fill color of the cloud based on expected bearish/bullish trend.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.prediction.Prediction.get_prediction">
+<span class="sig-name descname"><span class="pre">get_prediction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.prediction.Prediction.get_prediction" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line">Get prediction range of future stock predictions for the listed stocks</div>
+<div class="line">Output:</div>
+<div class="line-block">
+<div class="line">df1 : pd.dataframe</div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.prediction.Prediction.plot_pred">
+<span class="sig-name descname"><span class="pre">plot_pred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.prediction.Prediction.plot_pred" title="Permalink to this definition">¶</a></dt>
+<dd><div class="line-block">
+<div class="line">Plot of future stock predictions for the listed stocks.</div>
+<div class="line">The output figure widget is integrated with the dashboard.</div>
+<div class="line">Input:</div>
+<div class="line-block">
+<div class="line">df1 : pd.dataframe; output from get_prediction function</div>
+</div>
+<div class="line">Output:</div>
+<div class="line-block">
+<div class="line">fig : FigureWidget</div>
+</div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard.update">
+<span id="dashboard-update-module"></span><h2>dashboard.update module<a class="headerlink" href="#module-dashboard.update" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.update.Update">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.update.</span></span><span class="sig-name descname"><span class="pre">Update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.update.Update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This module is used to update the cache. This cache is eventually
+used to render the dashboard. We can set the time interval for this
+cache refresh based on our requirements. This can be done using a
+cron job which runs this function at every ‘t’ time interval.</p>
+<p>Currently, this can be set to 5 mins as it the minimum time interval
+for which we monitor any price change for a given stock.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.update.Update.save_as_pickle">
+<span class="sig-name descname"><span class="pre">save_as_pickle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./output/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.update.Update.save_as_pickle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard.widgets">
+<span id="dashboard-widgets-module"></span><h2>dashboard.widgets module<a class="headerlink" href="#module-dashboard.widgets" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="dashboard.widgets.Widgets">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dashboard.widgets.</span></span><span class="sig-name descname"><span class="pre">Widgets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.widgets.Widgets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<div class="line-block">
+<div class="line">This class generates all the widgets required for the dashboard.</div>
+<div class="line">Each widget is generated by a separate function definiton as listed below:</div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.widgets.Widgets.get_banner_widget">
+<span class="sig-name descname"><span class="pre">get_banner_widget</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.widgets.Widgets.get_banner_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method generates the banner and returns it as ipywidget.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.widgets.Widgets.get_cube_widget">
+<span class="sig-name descname"><span class="pre">get_cube_widget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">percent_change_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.widgets.Widgets.get_cube_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates an animated sector-wise performance cube widget.</p>
+<div class="line-block">
+<div class="line">Attributes:</div>
+<div class="line-block">
+<div class="line">percent_change_df: DataFrame with the precentage change in each sector</div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.widgets.Widgets.get_heatmap_widget">
+<span class="sig-name descname"><span class="pre">get_heatmap_widget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./output/'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.widgets.Widgets.get_heatmap_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates the heatmap ipywidget presented on the
+home screen. This widget reflects real-time daily performance of
+pre-decided stocks based on previous day’s closing price.</p>
+<div class="line-block">
+<div class="line">Attributes:</div>
+<div class="line-block">
+<div class="line">parent_path: path to the png file which is rendered as widget</div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.widgets.Widgets.get_index_stats_widget">
+<span class="sig-name descname"><span class="pre">get_index_stats_widget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sector_market_share</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">percent_change_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['^DJI',</span> <span class="pre">'^IXIC',</span> <span class="pre">'^GSPC',</span> <span class="pre">'QQQ']</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.widgets.Widgets.get_index_stats_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates the index stats ipywidget presented
+on the home screen. It also includes the best performing sector
+for the day.</p>
+<div class="line-block">
+<div class="line">Attributes:</div>
+<div class="line-block">
+<div class="line">sector_market_share: Sector-wise major stocks and their market cap</div>
+<div class="line">percent_change_df: DataFrame with the precentage change in each sector</div>
+<div class="line">data: list of ‘index’ to be displayed on the home screen</div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.widgets.Widgets.get_sector_wise_widget">
+<span class="sig-name descname"><span class="pre">get_sector_wise_widget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">percent_change_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.widgets.Widgets.get_sector_wise_widget" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates the sector-wise performance ipywidget.</p>
+<div class="line-block">
+<div class="line">Attributes:</div>
+<div class="line-block">
+<div class="line">percent_change_df: DataFrame with the precentage change in each sector</div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.widgets.Widgets.stock_price_plot_factory">
+<span class="sig-name descname"><span class="pre">stock_price_plot_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stock_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_daily</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.widgets.Widgets.stock_price_plot_factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates the stock price graph/indicator ipywidget.
+This is an interactive widget which reflects real-time data
+from yfinance. It includes dropdown menus to select among a list
+of stocks and the time-interval.</p>
+<div class="line-block">
+<div class="line">Attributes:</div>
+<div class="line-block">
+<div class="line">stock_list: List of stocks whose prices are to be visualized</div>
+<div class="line">data_daily: DataFrame on different stocks’ prices on daily-interval</div>
+</div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="dashboard.widgets.Widgets.ti_plot_factory">
+<span class="sig-name descname"><span class="pre">ti_plot_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ti_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_intervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['1d',</span> <span class="pre">'30m',</span> <span class="pre">'5m']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stock_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['AAPL',</span> <span class="pre">'NVDA',</span> <span class="pre">'INTC',</span> <span class="pre">'QCOM',</span> <span class="pre">'MSFT',</span> <span class="pre">'GOOGL',</span> <span class="pre">'META',</span> <span class="pre">'AMZN',</span> <span class="pre">'WMT',</span> <span class="pre">'TSLA',</span> <span class="pre">'EA',</span> <span class="pre">'UNH',</span> <span class="pre">'AZN',</span> <span class="pre">'CVS']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curr_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'1d'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cur_stock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'AAPL'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dashboard.widgets.Widgets.ti_plot_factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function generates the techincal indicator ipywidget.
+This is an interactive widget which reflects real-time data.
+It includes dropdown menus to select among a list
+of stocks and the time-interval.</p>
+<div class="line-block">
+<div class="line">Attributes:</div>
+<div class="line-block">
+<div class="line">data_list: list of DataFrame on different intervals</div>
+<div class="line">ti_list: list of DataFrame on techinical indicator objects on different intervals</div>
+<div class="line">curr_interval: the pre-selected interval when the widget shows up for the ifrst time</div>
+<div class="line">cur_stock: the pre-selected stock when the widget shows up for the ifrst time</div>
+</div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-dashboard">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dashboard" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">dashboard package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-dashboard.app">dashboard.app module</a></li>
+<li><a class="reference internal" href="#module-dashboard.prediction">dashboard.prediction module</a></li>
+<li><a class="reference internal" href="#module-dashboard.update">dashboard.update module</a></li>
+<li><a class="reference internal" href="#module-dashboard.widgets">dashboard.widgets module</a></li>
+<li><a class="reference internal" href="#module-dashboard">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="modules.html"
+                          title="previous chapter">dashboard</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="dashboard.utils.html"
+                          title="next chapter">dashboard.utils package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/dashboard.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dashboard.utils.html" title="dashboard.utils package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="dashboard"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Trade Analytics 1.0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >dashboard</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">dashboard package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Anish Kumar, Haoran Xu, Nikhil Dutt, Sandra Villamar, Sanjey Selvan-Sumathi, Zicheng Wei.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>
