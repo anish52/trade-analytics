@@ -1,7 +1,7 @@
-from banner import *
-from sector import *
-from cube import *
-from vanilla_dataloader import * 
+from utils.banner import *
+from utils.sector import *
+from utils.cube import *
+from utils.vanilla_dataloader import * 
 import ipywidgets
 import pandas as pd
 import pytest

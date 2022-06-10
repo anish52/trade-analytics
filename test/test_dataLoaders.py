@@ -1,6 +1,6 @@
-from banner import *
-from index_performance import * 
-from vanilla_dataloader import *
+from utils.banner import *
+from utils.index_performance import * 
+from utils.vanilla_dataloader import *
 import pandas as pd
 import pytest
 
