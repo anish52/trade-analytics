@@ -6,6 +6,19 @@ import numpy as np
 import plotly.graph_objs as go
 
 class Prediction:
+    '''
+    Prediction class predicts the expected bearish/bullish market behaivior
+    based on the widely used 'Ichimoku' algorithm. It monitors the moving-
+    average (MA) over a fixed time interval and forecasts the trend further.
+    The prediction is demonstrated in the form of a cloud, famously known as
+    the 'Ichimoku Cloud'. This module finally returns a figure widget which 
+    can be directly integrated with the dashboard.
+
+    ---------------------------------------------------------------------
+    Methods:
+        - def get_prediciton()
+        - def plot_pred(df)
+    '''
     def __init__(self):
         self.stock_list = ['AZN','AAPL','NVDA','INTC','QCOM','MSFT','GOOGL','META','AMZN','WMT','TSLA','EA','UNH','CVS']
         self.window = 26
@@ -95,7 +108,7 @@ class Prediction:
 
     def fillcol(self, label):
         """
-        Fill Color
+        Fill color of the cloud based on expected bearish/bullish trend.
         """
         if label == 0:
             return 'rgba(0,250,0,0.4)'
@@ -106,9 +119,10 @@ class Prediction:
 
     def plot_pred(self, df1):
         """
-        Plot of future stock predictions for the listed stocks
+        Plot of future stock predictions for the listed stocks. 
+        The output figure widget is integrated with the dashboard.
         Input:
-            df1 : pd.dataframe
+            df1 : pd.dataframe; output from get_prediction function
         Output:
             fig : FigureWidget
         """

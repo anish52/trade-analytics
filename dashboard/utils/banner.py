@@ -3,6 +3,13 @@ from bs4 import BeautifulSoup
 import ipywidgets as ipw
 
 class Banner:
+    '''
+    This class generates the Banner widget. 
+    ---------------------------------------------------------------------------
+    Methods:
+        - get_performance(): returns the data for the banner
+        - create_banner(): returns the ipywidget object 
+    '''
     def __init__(self):
         pass
 

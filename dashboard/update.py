@@ -12,6 +12,10 @@ class Update(object):
 
 	Currently, this can be set to 5 mins as it the minimum time interval
 	for which we monitor any price change for a given stock.
+
+	---------------------------------------------------------------------
+	Methods:
+		- def save_as_pickle(parent_path)
 	"""
 	def __init__(self, arg=None):
 		super(Update, self).__init__()

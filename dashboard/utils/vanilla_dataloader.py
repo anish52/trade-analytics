@@ -6,6 +6,14 @@ from ta.momentum import StochasticOscillator
 
 
 class Vanilla_dataloader:
+    '''
+    This class queries the yfinance API and generates the data for
+    the list of stocks passed as parameters. 
+    ---------------------------------------------------------------------------
+    Methods:
+        - load_data(): returns the data for the list of stocks passed as params
+        - percent_change_df(): returns the percentage change based on the prev. closing price
+    '''
     def __init__(self):
         pass
 

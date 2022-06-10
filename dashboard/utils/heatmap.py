@@ -9,6 +9,13 @@ metric = 'percent_change'
 
 
 class Heatmap:
+    '''
+    This class generates the Heatmap widget on the homescreen. 
+    ---------------------------------------------------------------------------
+    Methods:
+        - get_heatmap(): saves the heatmap plot to be rendered on dashboard.
+        - get_color(): returns the 'RED/GREEN' color based on stock performance.
+    '''
     def __init__(self):
         pass
 

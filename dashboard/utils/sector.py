@@ -1,6 +1,14 @@
 import pandas as pd
 
 class Sector:
+    '''
+    This class returns the sector wise performance based on the 
+    weighted sum of the major stocks in each sector. The weights 
+    are based on the market cap of each comapny.
+    --------------------------------------------------------------
+    Methods:
+        - get_sector(): returns the sector-wise percentage change
+    '''
     def __init__(self):
         pass
 

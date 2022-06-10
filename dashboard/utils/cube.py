@@ -1,6 +1,12 @@
 import ipywidgets as ipw
 
 class Cube:
+    '''
+    This class generates the Cube widget. 
+    ---------------------------------------------------------------------------
+    Methods:
+        - cube_factory(): returns the cube ipywidget to be rendered on dashboard.
+    '''
     def __init__(self):
         pass
 
