@@ -13,11 +13,6 @@ class Prediction:
     The prediction is demonstrated in the form of a cloud, famously known as
     the 'Ichimoku Cloud'. This module finally returns a figure widget which 
     can be directly integrated with the dashboard.
-
-    ---------------------------------------------------------------------
-    Methods:
-        - def get_prediciton()
-        - def plot_pred(df)
     '''
     def __init__(self):
         self.stock_list = ['AZN','AAPL','NVDA','INTC','QCOM','MSFT','GOOGL','META','AMZN','WMT','TSLA','EA','UNH','CVS']
@@ -37,9 +32,9 @@ class Prediction:
 
     def get_prediction(self):
         """
-        Get prediction range of future stock predictions for the listed stocks
-        Output:
-            df1 : pd.dataframe
+        | Get prediction range of future stock predictions for the listed stocks
+        | Output:
+        |   df1 : pd.dataframe
         """
         df1 = yf.download("AAPL",
                           start=self.start_date,
@@ -119,12 +114,12 @@ class Prediction:
 
     def plot_pred(self, df1):
         """
-        Plot of future stock predictions for the listed stocks. 
-        The output figure widget is integrated with the dashboard.
-        Input:
-            df1 : pd.dataframe; output from get_prediction function
-        Output:
-            fig : FigureWidget
+        | Plot of future stock predictions for the listed stocks. 
+        | The output figure widget is integrated with the dashboard.
+        | Input:
+        |    df1 : pd.dataframe; output from get_prediction function
+        | Output:
+        |    fig : FigureWidget
         """
         fig = go.Figure()
         for stock in self.stock_list:

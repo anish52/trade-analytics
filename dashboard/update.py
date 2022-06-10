@@ -3,7 +3,7 @@ from utils.vanilla_dataloader import Vanilla_dataloader
 from utils.heatmap import Heatmap
 from prediction import Prediction
 
-class Update(object):
+class Update:
 	"""
 	This module is used to update the cache. This cache is eventually
 	used to render the dashboard. We can set the time interval for this
@@ -12,10 +12,6 @@ class Update(object):
 
 	Currently, this can be set to 5 mins as it the minimum time interval
 	for which we monitor any price change for a given stock.
-
-	---------------------------------------------------------------------
-	Methods:
-		- def save_as_pickle(parent_path)
 	"""
 	def __init__(self, arg=None):
 		super(Update, self).__init__()
