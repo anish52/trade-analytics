@@ -56,9 +56,3 @@ class Banner:
 
     #     style_str = "<html><head><style>.code-style {'background-color': '#454545', 'border': '2px solid white','border-radius': '5px', 'padding': '10px'} </style></head>"
         return ipw.HTML('<marquee onmouseover="this.stop();" onmouseout="this.start();" width=1375 bgcolor="#000000", "border": "2px solid white","border-radius": "5px", "padding": "10px">' + html_string +  '</marquee>')
-
-
-if __name__ == '__main__':
-    a = Banner()
-    b = a.create_banner()
-    print(b)

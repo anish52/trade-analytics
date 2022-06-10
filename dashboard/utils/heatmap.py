@@ -1,5 +1,5 @@
 from utils.vanilla_dataloader import Vanilla_dataloader
-
+import os
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import matplotlib.image as mpimg
@@ -16,7 +16,7 @@ class Heatmap:
         global metric
         return 'g' if df.loc[x][metric]>=0 else 'r'
 
-    def get_heatmap(self, df):
+    def get_heatmap(self, df, output_path='./output/overview.png'):
         global metric
         plt.ioff()
         plt.style.use('dark_background')
@@ -59,24 +59,24 @@ class Heatmap:
             i13 = AnnotationBbox(OffsetImage(mpimg.imread('./images/azn.png'), zoom=0.6), (114, 13))
             i14 = AnnotationBbox(OffsetImage(mpimg.imread('./images/cvs.png'), zoom=0.8), (124, 13))
         except:
-            i1 = AnnotationBbox(OffsetImage(mpimg.imread('../images/apple.png'), zoom=0.7), (22, 18))
-            i2 = AnnotationBbox(OffsetImage(mpimg.imread('../images/nvidia.png'), zoom=0.8), (24, 30))
-            i3 = AnnotationBbox(OffsetImage(mpimg.imread('../images/intel.png'), zoom=1), (38, 21))
-            i4 = AnnotationBbox(OffsetImage(mpimg.imread('../images/qualcomm.png'), zoom=1), (38, 10.5))
+            i1 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/apple.png'), zoom=0.7), (22, 18))
+            i2 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/nvidia.png'), zoom=0.8), (24, 30))
+            i3 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/intel.png'), zoom=1), (38, 21))
+            i4 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/qualcomm.png'), zoom=1), (38, 10.5))
 
-            i5 = AnnotationBbox(OffsetImage(mpimg.imread('../images/microsoft.png'), zoom=0.6), (62, 30))
-            i6 = AnnotationBbox(OffsetImage(mpimg.imread('../images/google.png'), zoom=0.6), (58, 13))
-            i7 = AnnotationBbox(OffsetImage(mpimg.imread('../images/meta2.png'), zoom=1.25), (68, 13))
+            i5 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/microsoft.png'), zoom=0.6), (62, 30))
+            i6 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/google.png'), zoom=0.6), (58, 13))
+            i7 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/meta2.png'), zoom=1.25), (68, 13))
 
-            i8 = AnnotationBbox(OffsetImage(mpimg.imread('../images/amazon.png'), zoom=0.7), (86, 13))
-            i9 = AnnotationBbox(OffsetImage(mpimg.imread('../images/walmart.jpeg'), zoom=0.6), (96, 13))
+            i8 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/amazon.png'), zoom=0.7), (86, 13))
+            i9 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/walmart.jpeg'), zoom=0.6), (96, 13))
 
-            i10 = AnnotationBbox(OffsetImage(mpimg.imread('../images/tesla.png'), zoom=0.5), (86, 32.5))
-            i11 = AnnotationBbox(OffsetImage(mpimg.imread('../images/ea.png'), zoom=0.4), (96, 33))
+            i10 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/tesla.png'), zoom=0.5), (86, 32.5))
+            i11 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/ea.png'), zoom=0.4), (96, 33))
 
-            i12 = AnnotationBbox(OffsetImage(mpimg.imread('../images/uhg.png'), zoom=0.9), (118, 30.5))
-            i13 = AnnotationBbox(OffsetImage(mpimg.imread('../images/azn.png'), zoom=0.6), (114, 13))
-            i14 = AnnotationBbox(OffsetImage(mpimg.imread('../images/cvs.png'), zoom=0.8), (124, 13))
+            i12 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/uhg.png'), zoom=0.9), (118, 30.5))
+            i13 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/azn.png'), zoom=0.6), (114, 13))
+            i14 = AnnotationBbox(OffsetImage(mpimg.imread(os.getcwd()+'/../dashboard/images/cvs.png'), zoom=0.8), (124, 13))
 
 
 
@@ -132,13 +132,9 @@ class Heatmap:
         ax.set_xlim(0,140)
         ax.set_ylim(0,40)
 
-        try:
-            output_path = './output/overview.png'
-            plt.savefig(output_path, bbox_inches='tight')
-        except:
-            output_path = '../output/overview.png'
-            plt.savefig(output_path, bbox_inches='tight')
+        plt.savefig(output_path, bbox_inches='tight')
         plt.close('all')
+
         return output_path
 
 

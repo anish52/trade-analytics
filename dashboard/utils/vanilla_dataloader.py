@@ -124,30 +124,3 @@ class Vanilla_dataloader:
         df = df.rename(columns={0: "percent_change", 1: "sector", 2: "market_share"})
         df.index.name = 'stock'
         return df
-
-if __name__=="__main__":
-    sector_market_share = {'AAPL': ['Electronics Technology', 2455053795328],
-     'AMZN': ['Retail Trade', 1167926362112],
-     'AZN': ['Healthcare', 208860000000],
-     'CVS': ['Healthcare', 129431887872],
-     'EA': ['Consumer Durables', 39177392128],
-     'META': ['Technology Servies', 532804836352],
-     'GOOGL': ['Technology Servies', 1482231906304 ],
-     'INTC': ['Electronics Technology', 181184856064],
-     'MSFT': ['Technology Servies', 2051480354816],
-     'NVDA': ['Electronics Technology', 468770127872],
-     'QCOM': ['Electronics Technology', 156531195904],
-     'TSLA': ['Consumer Durables', 762865975296],
-     'UNH': ['Healthcare', 475756396544],
-     'WMT': ['Retail Trade', 356388110336]} 
-    
-    stock_list = list(sector_market_share.keys())
-
-    a = Vanilla_dataloader()
-
-    data_list, ti_list = a.load_data(stock_list)
-    print(data_list)
-    print(ti_list)
-
-    stock_df = a.percent_change_df(data_list, sector_market_share)
-    print(stock_df)

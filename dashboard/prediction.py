@@ -195,12 +195,4 @@ class Prediction:
                                      align="left", showarrow=False, font_color='white')
             ])
 
-        #fig.show()
         return go.FigureWidget(fig)
-
-
-if __name__ == '__main__':
-    a = Prediction()
-    pred_df = a.get_prediction()
-    pred_plot = a.plot_pred(pred_df)
-    print(pred_plot)
