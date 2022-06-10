@@ -1,5 +1,5 @@
 import pytest
-from prediction import*
+from utils.prediction import*
 import pandas as pd
 import plotly 
 a = Prediction()
