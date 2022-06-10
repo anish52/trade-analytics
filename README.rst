@@ -89,7 +89,7 @@ pytest --cov-report term-missing --cov=../dashboard
 
 You can also find the final report which has been added to the 'tests' directory as 'code_coverage.png'.
 
-.. image:: .. image:: https://github.com/anish52/trade-analytics/blob/main/tests/code_coverage.png?sanitize=true
+.. image:: https://github.com/anish52/trade-analytics/blob/main/tests/code_coverage.png?sanitize=true
 
 Contribute
 ----------
