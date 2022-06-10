@@ -15,6 +15,8 @@ This dashboard is developed to serve expert traders as well as newcomers to help
 
 If you're interested in entering the market and want to get a head start, this dashboard is for you.We hope this brings our users a unique interactive experience, and allows them to invest and diversify better.
 
+.. image:: https://github.com/anish52/trade-analytics/blob/main/dashboard.png?sanitize=true
+
 Installation
 ------------
 
